@@ -20,7 +20,7 @@ class SignInController extends GetxController {
 
   Future<void> loginApi() async {
     setRxRequestStatus(Status.LOADING);
-    Map data = {"identifier": emailController.value.text};
+    Map data = {"identifier": emailController.value.text , "password": passwordController.value.text};
     // Map data = {"email": emailController.value.text, "password": passwordController.value.text};
     await _api.loginApi(data).then((response) async {
       setRxRequestStatus(Status.COMPLETED);
