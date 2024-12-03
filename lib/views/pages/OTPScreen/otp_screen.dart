@@ -46,9 +46,10 @@ class _OTPScreenState extends State<OTPScreen> {
                 ),
                 InkWell(
                   onTap: () async {
-                    final signInController = Get.put(SignInController());
-                    signInController.emailController.value.text = userDetails.user.email;
-                    await signInController.loginApi();
+                    await Utils.showToast(userDetails.otp, sec: 7);
+                    // final signInController = Get.put(SignInController());
+                    // signInController.emailController.value.text = userDetails.user.email;
+                    // await signInController.loginApi();
                   },
                   child: Text(
                     'Resend',
