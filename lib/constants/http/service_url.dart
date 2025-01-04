@@ -1,5 +1,5 @@
 class ServiceUrl {
-  static const String baseUrl = 'https://novel-api.syahmisam.my';
+  static const String baseUrl = 'https://novel.syahmisam.my';
   static const String baseApiUrl = '$baseUrl/api/';
   static const String countryCodeUrl = 'countryCode';
   static const String loginUrl = 'login';
